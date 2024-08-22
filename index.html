@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pet Adoption Validator</title>
     <link rel="stylesheet" href="index.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <h2>Pet Adoption Syntax Validator</h2>
-    <h3>Note to all SPCA volunteers 📝</h3>
-    <p>All pet adoption codes start with "pet_" and then the pet's birth year and name.</p>
-    <p><strong>Example:</strong> pet_2015Forrest</p>
-    <input type="text" id="petInput" placeholder="Enter pet adoption detail">
-    <button onclick="validateSyntax()">Validate</button>
-    <p id="result"></p>
-</body>
+    <script defer src="script.js" defer></script> <!-- This script tag includes the external JavaScript file 'script.js' and defers its execution until after the HTML document has been fully parsed. -->
+
+  </head>
+  <body>
+      <h2>Pet Adoption Syntax Validator</h2>
+      <h3>Note to all SPCA volunteers 📝</h3>
+      <p>All pet adoption codes start with "pet_" and then the pet's birth year and name.</p>
+      <p><strong>Example:</strong> pet_2015Forrest</p>
+      <input type="text" id="petInput" placeholder="Enter pet adoption detail">
+      <button onclick="validateSyntax()">Validate</button>
+      <div id="validationContainer">
+        <p id="result"></p>
+        <span id="statusCircle"></span>
+      </div>
+  </body>
 </html>
+
+
